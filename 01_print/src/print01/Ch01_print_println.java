@@ -8,7 +8,6 @@ public class Ch01_print_println {
 		// - 실행되지 않음
 		// - 설명, 날짜, 누가 만들었는지, 중요한 메서드에 대한 설명
 		// - 한줄 주석 [단축키 ctrl + / (토글키)]
-		/
 		/*
 		  여러줄 주석
 		  - 이 안의 모든 글씨는 주석임  
@@ -20,8 +19,8 @@ public class Ch01_print_println {
 		System.out.println(10+30);	// 숫자는 쌍따옴표를 넣지 않는다
 		System.out.println("10+30");
 		
-        System.out.print("줄 바꿈 안함, ")
-        System.out.print("강의실 : 3강의실")
+        System.out.print("줄 바꿈 안함, ");
+        System.out.print("강의실 : 3강의실");
 	}
 
 }
