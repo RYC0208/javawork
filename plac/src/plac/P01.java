@@ -42,8 +42,7 @@ public class P01 {
 		System.out.println("사각형의 둘레는 ="+(num3+num4)*2);
 		System.out.println("사각형의 면적은 ="+ (num3*num4));
 	
-		
-				
+
 	}
 
 }

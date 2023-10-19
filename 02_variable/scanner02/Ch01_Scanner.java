@@ -33,6 +33,21 @@ public class Ch01_Scanner {
 		String address = scan.nextLine();
 		System.out.println("주소 : " + address);
 		
+		System.out.print("당신의 당신의 성별은 무엇입니까?(남, 여) : ");
+		//String gender2 = scan.next();
+		
+		/*		String gender2 = scan.next();
+				char gender3 = gender2.charAt(0);*/
+		
+		char gender2 = scan.next().charAt(1);
+		
+		
+		System.out.println("당신은 " + gender2 + "자 입니다.");
+		
+		System.out.println("이름을 영문으로 쓰시오 :");
+		char name2 = scan.next().charAt(3);
+		System.out.println("당신의 이름 중 4번째 글자는 " + name2 + "입니다");
+		
 	}
 
 }

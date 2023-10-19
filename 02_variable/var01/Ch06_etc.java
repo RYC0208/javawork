@@ -14,9 +14,7 @@ public class Ch06_etc {
 		System.out.println("short크기 :" + Short.MIN_VALUE + "~" + Byte.MAX_VALUE);
 		System.out.println("int크기 : " + Integer.MIN_VALUE + "~" + Integer.MAX_VALUE);
 		System.out.println("char크기 : " + (int)Character.MIN_VALUE + "~" + (int)Character.MAX_VALUE);
-		
-		char char1 = 'A';
-		System.out.println('A'+65471);
+
 	}
 
 }
