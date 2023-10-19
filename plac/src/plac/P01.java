@@ -41,7 +41,7 @@ public class P01 {
 		System.out.println("사각형의 가로 길이/ 15.8");
 		System.out.println("사각형의 둘레는 ="+(num3+num4)*2);
 		System.out.println("사각형의 면적은 ="+ (num3*num4));
-		
+	
 		
 				
 	}
