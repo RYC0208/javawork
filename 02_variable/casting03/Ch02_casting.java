@@ -4,7 +4,7 @@ public class Ch02_casting {
 
 	public static void main(String[] args) {
 		
-	     int num1 = 35848;
+	     int num1 = 1000;
 	     byte by1 = (byte)num1;
 	     System.out.println(by1);
 	     

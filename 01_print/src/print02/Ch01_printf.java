@@ -3,7 +3,7 @@ package print02;
 public class Ch01_printf {
 
 	public static void main(String[] args) {
-		//십진수 출력 
+		//십진수 출력  정수 : %d
     System.out.printf("%d\n", 3);
     System.out.printf("%d %d\n", 5, 8);
     System.out.printf("주민등록번호 : %d - %d\n", 990208, 1490000);

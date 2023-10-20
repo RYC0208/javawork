@@ -25,6 +25,13 @@ public class Ch01_assignment {
 		num1 %= 3; // num1 = num1 % 3;
 		System.out.println("num1(10) % 3 = " + num1);
 		
+		int num2= 50_000; // 100,000,000 사람이 볼대 편하게 하기위해
+		int num3= 2_000;
+		
+		long re = num2 * num3 ;
+		
+		System.out.println(re);
+		
 	}
 
 }

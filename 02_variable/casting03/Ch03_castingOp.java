@@ -3,6 +3,7 @@ package casting03;
 public class Ch03_castingOp {
 
 	public static void main(String[] args) {
+		//int형 보다 작은 자료형을 연산하면 int형으로 형변환됨
 		byte b1 = 10;
 		byte b2 = 20;
 		byte result = (byte)(b1 + b2);
@@ -25,6 +26,10 @@ public class Ch03_castingOp {
 		double result4 = int3 / dou1;
 		int result5 = (int)(int3/dou1);
 		
+		int int4 = 100;
+		int int5 = 3;
+		double re = (double)int4 / int5;
+		 System.out.printf("%.2f", re);
 		
 		
 	}
