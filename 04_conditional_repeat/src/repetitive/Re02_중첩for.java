@@ -26,14 +26,24 @@ public class Re02_중첩for {
 				}
 				System.out.println(                 );
 			}*/
-		for(int dan=1; dan<=9; dan++) {
+
+		/*		
+				for(int ddan=2; ddan<=9; ddan++) {
+					
 			
-			for(int i=2; i<=9; i++) {
-				System.out.printf("%d*%d=%2d ",i,dan,i*dan);
-				
-			}
-			System.out.printf("\n");
-		}
+				for(int i2 = 1; i2<=9; i2++) {
+					System.out.println(ddan+"*"+i2+"="+ddan*i2);
+				}
+				}
+				*/
+						for(int dan=1; dan<=9; dan++) {
+							
+							for(int i=2; i<=9; i++) {
+								System.out.printf("%d*%d=%2d ",i,dan,i*dan);
+								
+							}
+							System.out.printf("\n");
+						}
 
 	}
 
