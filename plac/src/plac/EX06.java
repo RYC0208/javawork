@@ -58,18 +58,68 @@ public class EX06 {
 				else 
 					System.out.println(menu+"는 없는 메뉴 입니다.");*/
 		//문제 4
-		System.out.print("주민번호 입력(-포함): ");
-		String jumin = sc.next();
-		char[] origin = new char[jumin.length()];
-		for(int i=0; i<origin.length; i++) {
-			origin[i] = jumin.charAt(i);
-		}
-		char[] copy = new char[origin.length];
-		for(int i=0; i<copy.length; i++) {
-			if(i<8)
-				copy[i] = origin[i];
-			else copy[i] = '*';
-		} System.out.println(copy);
+		/*		System.out.print("주민번호 입력(-포함): ");
+				String jumin = sc.next();
+				char[] origin = new char[jumin.length()];
+				for(int i=0; i<origin.length; i++) {
+					origin[i] = jumin.charAt(i);
+				}
+				char[] copy = new char[origin.length];
+				for(int i=0; i<copy.length; i++) {
+					if(i<8)
+						copy[i] = origin[i];
+					else copy[i] = '*';
+				} System.out.println(copy);*/
+		//문제 5
+		
+		boolean run = true;
+		int studentnum = 0;
+		int[] score = null;
+		int n1= 0;
+				
+				while(run) {
+					System.out.println("-----------------------");
+					System.out.println("1.학생수 : 2.점수입력 : 3.점수리스트 : 4.분석 : 5.종료");
+					System.out.println("-----------------------");
+					System.out.println("선택>");
+				
+					int selectno = Integer.parseInt(sc.nextLine());
+					
+					
+					if(selectno ==1) {
+					 System.out.println("학생수>");
+					 studentnum = Integer.parseInt(sc.nextLine());
+					 score = new int[studentnum];
+					
+					}else if (selectno ==2) {
+					for(int i = 0; i<score.length ; i++) {
+						
+						n1++;
+					System.out.println("학생["+(n1)+"]> ");
+					score[i] = Integer.parseInt(sc.nextLine());
+					} n1=0;
+						
+					}else if (selectno ==3) {
+						for (int i = 0; i < score.length; i++) {
+							n1++;
+							System.out.println("학생["+n1+"]:"+score[i]);
+						}
+						
+					}else if (selectno ==4) {
+						int max = 0;
+						int sum = 0;
+						double avg = 0;
+						for (int i = 0; i< score.length;i++) {
+							max = (max<score[i]) ? score[i] :max;
+							sum += score[i];
+						} avg=(double) sum/ studentnum;
+						System.out.println("최고 점수: "+max);
+						System.out.println("평균 점수: "+avg);
+						
+					}else if (selectno ==5)
+					run = false;
+				}
+				System.out.println("프로그램 종료");
 	}
 
 }
