@@ -17,7 +17,7 @@ public class Tv {
 	int cha;
 	boolean power;
 	Tv(String company, String model, int inc){
-		System.out.println("생성자 호출");
+		System.out.println("_____TV의 정보_____");
 		this.company = company;
 		this.model = model;
 		this.inc = inc;
@@ -30,7 +30,20 @@ public class Tv {
 			System.out.println("전원:on");
 		else 
 			System.out.println("전원:off");
-		}
+	}int chaup(){
+		cha+=1;
+		return cha;
+	}int chadown(){
+		cha-=1;
+		return cha;
+	}int volup(){
+		vol+=1;
+		return vol;
+	}int voldown(){
+		vol-=1;
+		return vol;
+	}
+	
 
 		
 	

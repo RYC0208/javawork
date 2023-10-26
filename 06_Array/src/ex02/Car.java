@@ -1,9 +1,9 @@
-package objCar05;
+package ex02;
 
 public class Car {
 
 	// 필드
-	String company = "기아";
+ public String company = "기아";
 	String model = "k7";
 	String color = "Black";
 	final int MAX_SPEED = 250;
@@ -11,7 +11,7 @@ public class Car {
 	boolean run ; //false
 	
 	// 메소드
-	void run(){
+	public void run(){
 		run = !run;
 		if(run)
 			System.out.println("출발합니다. 붕붕붕붕");
@@ -36,4 +36,5 @@ public class Car {
 		this.speed = speed;
 		return this.speed;
 	}
+	
 }

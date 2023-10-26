@@ -23,7 +23,7 @@ public class Arithmetic {
 		
 		return (double)x/y;
 		// return x/y;와 동일함
-	}
+	} 
 	int add5 (int x, int y) {
 		int re = x%y;
 		return re;

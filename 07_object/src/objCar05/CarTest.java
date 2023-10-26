@@ -1,5 +1,7 @@
 package objCar05;
 
+import ex02.Car;
+
 public class CarTest {
 
 	public static void main(String[] args) {
