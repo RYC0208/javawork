@@ -17,7 +17,7 @@ public class TvTest02 {
 		
 		for(int i=0; i<tv.MAX_VOL;i++) {
 			System.out.println("볼륨을 입력하세요:");
-			int vol
+			int vol;
 				
 			}
 		

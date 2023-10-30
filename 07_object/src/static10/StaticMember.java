@@ -16,7 +16,7 @@ package static10;
 			System.out.println("인스턴스 메소드 Me1()");
 		}
 		String Me2() {
-			System.out.println("인스턴스 메소드 Me2()");
+			System.out.println("인스턴스 메소드w Me2()");
 			return "Me2()";
 		}
 //정적 메소드 | 객체를 생성하지 않고도 사용 할 수 있고 객체를 생성해도 사용 가능

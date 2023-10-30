@@ -26,7 +26,7 @@ public class Array_향상된for문08 {
 		int num1[] = new int[100];
 		for(int i=0; i<num1.length; i++) {
 			System.out.println("숫자를 입력:");
-			int n1 = 
+			
 			
 		}
 	
