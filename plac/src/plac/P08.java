@@ -3,8 +3,7 @@ package plac;
 public class P08 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	 int[] num = new int[];
 	}
 
 }
