@@ -1,4 +1,4 @@
-package object01;
+package system03;
 
 import java.util.Scanner;
 

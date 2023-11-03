@@ -1,4 +1,4 @@
-package object01;
+package object02;
 
 import java.util.Scanner;
 

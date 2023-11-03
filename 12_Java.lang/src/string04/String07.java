@@ -1,4 +1,4 @@
-package object01;
+package string04;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -38,8 +38,6 @@ public class String07 {
 	System.out.println(str4+" program");
 	
 	String str6 = str4 + " program";//이거나 저거나 똑같아서 굳이 concat 은 안쓰는듯
-
-	//contains(charSequence s) : 글자가 포함되어 있으면 true 반환
 	boolean re = str6.contains("java");
 	System.out.println(re);
 	
@@ -68,10 +66,9 @@ public class String07 {
 	System.out.println(str9.substring(0,8)+"******");
 	//저장할땐 String 객체를 하나 생성해서 str9.substring+"******"를 넣어주면 됨.
 	
-	String str13 = "abcdef";
-	String upca11 = str13.toUpperCase();
-	char ch11 = upca.charAt(5);
-	System.out.println(ch11+"학점 입니데이");
+	//trim() : 앞,뒤의 공백제거
+	String Trim = "     kim    ";
+	System.out.println(Trim.trim());
 }
 
 
