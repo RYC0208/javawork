@@ -6,13 +6,13 @@ public class Book {
 	//필드
 private String title;
 private String author;
-private String category;
+private int category;
 private int price;
 
 //생성자
 public Book(){
 }
-public Book(String title, String author, String category, int price) {
+public Book(String title, String author, int category, int price) {
 	this.title = title;
 	this.author = author;
 	this.category = category;
@@ -31,10 +31,10 @@ public String getAuthor() {
 public void setAuthor(String author) {
 	this.author = author;
 }
-public String getCategory() {
+public int getCategory() {
 	return category;
 }
-public void setCategory(String category) {
+public void setCategory(int category) {
 	this.category = category;
 }
 public int getPrice() {
@@ -50,7 +50,15 @@ public int hashCode() {
 //이퀄스
 @Override
 public boolean equals(Object obj) {
-	if (this == obj)
+	if(obj instanceof Book) {
+		Book b = (Book)obj;
+		return 
+				(author.equals(b.author))
+				&&(price==b.price)
+				&&(title.equals(b.title))
+				&&(category==(b.category));
+	}return false;
+	/*if (this == obj)
 		return true;
 	if (obj == null)
 		return false;
@@ -58,7 +66,7 @@ public boolean equals(Object obj) {
 		return false;
 	Book other = (Book) obj;
 	return Objects.equals(author, other.author) && Objects.equals(category, other.category) && price == other.price
-			&& Objects.equals(title, other.title);
+			&& Objects.equals(title, other.title);*/
 }
 //투스트링
 @Override
