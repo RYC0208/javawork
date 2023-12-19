@@ -18,9 +18,12 @@ public class pppppp {
 		String str = "";
 		int n = 0;
 		String sum = "";
-		// a, na , ana, nana, anana, banana
+		
+		// String의 접미사를 배열로 만들기
+		
+		//ex)  a, na , ana, nana, anana, banana
 		for(int i=6; i>0; i--) {
-			for(int j=0; j<i; j++) {
+			for(int j=5; j>=0; j--) {
 			sum += banana.charAt(j);
 			System.out.println(sum);
 		}
@@ -30,7 +33,18 @@ public class pppppp {
 			sum = "";
 			System.out.println(Arrays.toString(aanswer));
 		}
-
+		System.out.println("--------------------------");
+		String an = "ananab";
+		for(int s=5; s>=0; s--) {
+			str += an.charAt(s);
+			System.out.println(str);
+		}
+		int price = 100000;
+		int s = 0;
+		if(price >= 100000) {
+			s = (int)(price - price*0.05);
+			System.out.println(s);
+		}
 	}
 
 }
