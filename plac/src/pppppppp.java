@@ -2,13 +2,28 @@
 public class pppppppp {
 
 	public static void main(String[] args) {
-		/*
-		 * 머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기
-		 * 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.
-		 */
-		int n = 15;
+        
+		String my_string  = "ABcDeFGHij";
+		String answer1 = "";
 		
-		System.out.println(n/7);
+		for(char c : my_string.toCharArray()) {
+			if(Character.isUpperCase(c)) {
+				answer1 += Character.toLowerCase(c);
+			}else {
+				answer1 += Character.toUpperCase(c);
+			}
+		}System.out.println(answer1);
+
+		
+		int hp =999;
+        int answer = 0;
+        
+        answer += hp/5;
+        System.out.println(answer);
+        answer += hp%5/3;
+        System.out.println(answer);
+        answer += hp%5%3/1;
+        System.out.println(answer);
 	}
 
 }
