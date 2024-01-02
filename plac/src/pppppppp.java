@@ -24,6 +24,19 @@ public class pppppppp {
         System.out.println(answer);
         answer += hp%5%3/1;
         System.out.println(answer);
+        
+
+        
+        
+        int s = 3;
+        for(int i=0; i<s; i++) {
+        	for(int j=0; j<=i; j++) {
+        		System.out.print("*");
+        	}
+        	System.out.println();
+        }
+
+
 	}
 
 }
